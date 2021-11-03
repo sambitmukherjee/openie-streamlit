@@ -87,6 +87,8 @@ example_sentences = [
 	"Everything about the new Yamaha MT15 is good, except the fact that dual-channel ABS is missing.",
 	"The Kia Sonet looks good but actually sucks.",
 	"If you thought the Kia Sonet drives well, you would be wrong.",
+	"Tom painted the entire fence.",
+	"The entire fence was painted by Tom.",
 	"What bullshit!"
 ]
 
