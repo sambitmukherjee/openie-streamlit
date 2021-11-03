@@ -78,6 +78,7 @@ chosen_mode = st.radio(
 
 example_sentences = [
 	"The food was delicious, but the service was too slow.",
+	"My father thought the movie wasn't logical.",
 	"Jack and Jill visited India and South Korea.",
 	"The U.S. president Barack Obama gave his speech on Tuesday and Wednesday to thousands of people.",
 	"Some people say Barack Obama was born in Kenya.",
