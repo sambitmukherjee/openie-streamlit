@@ -1,11 +1,14 @@
+# pip3 install pyopenie
+# pip3 install streamlit
+
 import numpy as np
 import pandas as pd
 from pyopenie import OpenIE5
 import streamlit as st
 
 @st.cache
-def get_extractor(first_time=True):
-	extractor = OpenIE5('http://18.208.212.160:8000')
+def get_extractor(url):
+	extractor = OpenIE5(url)
 	return extractor
 
 @st.cache
@@ -108,7 +111,7 @@ with st.form(key="form_key"):
 	if submitted:
 		st.write('> "' + sentence + '"')
 
-		extractor = get_extractor(True)
+		extractor = get_extractor('http://18.208.212.160:8000')
 		extractions_dict = get_extractions(sentence)
 		extractions_df = json_to_df(extractions_dict)
 
