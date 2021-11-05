@@ -111,7 +111,7 @@ with st.form(key="form_key"):
 	if submitted:
 		st.write('> "' + sentence + '"')
 
-		extractor = get_extractor('http://18.208.212.160:8000')
+		extractor = get_extractor('http://3.237.106.170:8000')
 		extractions_dict = get_extractions(sentence)
 		extractions_df = json_to_df(extractions_dict)
 
