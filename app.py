@@ -70,7 +70,7 @@ def radio_format_func(raw_option):
 	else:
 		return "Type your own sentence."
 
-st.title("Relation Extraction Using Open IE")
+st.title("Relation Extraction Using OpenIE")
 
 chosen_mode = st.radio(
 	label="Choose mode:",
@@ -112,14 +112,14 @@ with st.form(key="form_key"):
 		st.write('> "' + sentence + '"')
 
 		extractor = get_extractor('http://3.237.106.170:8000')
-		extractions_dict = get_extractions(sentence)
-		extractions_df = json_to_df(extractions_dict)
+		extractions_json = get_extractions(sentence)
+		extractions_df = json_to_df(extractions_json)
 
 		with st.expander(label='Table', expanded=True):
 			st.table(extractions_df)
 
 		with st.expander(label='JSON'):
-			st.write(extractions_dict)
+			st.write(extractions_json)
 
 """
 ---
