@@ -126,7 +126,7 @@ with st.form(key="form_key"):
 
 **References:**
 
-1. [Open IE](https://github.com/dair-iitd/OpenIE-standalone)
+1. [OpenIE](https://github.com/dair-iitd/OpenIE-standalone)
 2. [pyopenie](https://github.com/vaibhavad/python-wrapper-OpenIE5)
 
 """
